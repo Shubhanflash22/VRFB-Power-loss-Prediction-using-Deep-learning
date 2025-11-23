@@ -1,20 +1,95 @@
-# Optimization of Renewable Energy Storage
+# Optimization of Renewable Energy Storage ⚡🔋
 
-### Machine Learning & Deep Learning (Jan 2023 – May 2023)
+A machine learning and deep learning project focused on improving the efficiency and cost-effectiveness of renewable energy storage systems by predicting power loss under varying conditions.
 
-This project focuses on improving the accuracy of predicting power loss in renewable energy storage systems by applying machine learning and deep learning models to battery parameters such as state of charge and electrolyte flow rate.
+## Table of Contents
 
-## Overview
+* [Project Overview](#project-overview)
+* [Dataset](#dataset)
+* [Features](#features)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Models](#models)
+* [Results](#results)
+* [Future Work](#future-work)
+* [License](#license)
 
-The goal was to optimize energy storage performance and reduce operational cost by developing data-driven prediction models for power loss in Vanadium Redox Flow Batteries (VRFBs).
+## Project Overview
 
-## Work Done
+This project aims to optimize renewable energy storage systems by predicting power losses based on states of charge and electrolyte flow rates. Using machine learning and deep learning models, the project enhances prediction accuracy to improve energy storage efficiency and reduce costs.
 
-* **Developed three models — ANN, LSTM, and RNN** — to predict power loss at various states of charge (SOC) and electrolyte flow rates.
-* Designed a pipeline for **data preparation, feature engineering, and sequential modeling** tailored for time-dependent electrochemical behavior.
-* **Compared performance** against existing baseline models used in the lab.
-* **Achieved a 40–70% improvement in prediction accuracy**, with each of the three models outperforming traditional approaches.
+Key steps include:
 
-## Result
+* Modeling multiple predictive frameworks using ANN, LSTM, and RNN.
+* Predicting power loss under varying operational conditions.
+* Comparing model performance to existing approaches to maximize prediction accuracy.
 
-A set of deep learning–based predictive models that significantly enhance the accuracy of power-loss predictions, enabling better optimization of VRFB energy storage systems and lowering operational costs.
+## Dataset
+
+* Dataset contains measurements of power loss, states of charge, and electrolyte flow rates for energy storage systems.
+* Includes historical system performance data under different operating conditions.
+* Preprocessed and normalized to facilitate model training.
+
+## Features
+
+* **Power Loss Prediction:** Predict energy loss at various states of charge and electrolyte flow rates.
+* **Model Comparison:** Evaluate ANN, LSTM, and RNN for predictive accuracy.
+* **Optimization:** Use predictions to optimize energy storage system efficiency and cost.
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/renewable-energy-storage.git
+cd renewable-energy-storage
+
+# Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. Prepare your dataset in the required CSV format.
+2. Preprocess the data:
+
+```bash
+python preprocess_data.py
+```
+
+3. Train the models:
+
+```bash
+python train_models.py
+```
+
+4. Evaluate predictions:
+
+```bash
+python evaluate_models.py --input new_data.csv
+```
+
+## Models
+
+* **ANN (Artificial Neural Network):** Fully connected network for baseline prediction.
+* **LSTM (Long Short-Term Memory):** Captures temporal dependencies in energy storage data.
+* **RNN (Recurrent Neural Network):** Models sequential patterns in system behavior.
+* All models aim to predict power loss more accurately than existing approaches.
+
+## Results
+
+* Each model improved prediction accuracy of existing models by 40–70%.
+* Provides actionable insights for energy storage optimization and cost reduction.
+
+## Future Work
+
+* Incorporate more real-time operational data from diverse energy storage systems.
+* Explore hybrid models combining ANN and LSTM for further performance improvements.
+* Deploy models in real-time energy management systems for renewable energy grids.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
