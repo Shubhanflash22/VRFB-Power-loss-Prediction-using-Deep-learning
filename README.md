@@ -40,36 +40,37 @@ Key steps include:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/renewable-energy-storage.git
+git clone https://github.com/yourusername/VRFB-Power-loss-Prediction-using-Deep-learning.git
 cd renewable-energy-storage
 
 # Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
+# Pip install dependencies
+
 ```
 
 ## Usage
 
 1. Prepare your dataset in the required CSV format.
-2. Preprocess the data:
+2. Complete Code for ANN is :
 
 ```bash
-python preprocess_data.py
+ANN.py
 ```
 
-3. Train the models:
+2. Complete Code for LSTM is :
 
 ```bash
-python train_models.py
+LSTM.py
 ```
 
-4. Evaluate predictions:
+4. Data and best models are in the zips:
 
 ```bash
-python evaluate_models.py --input new_data.csv
+ANN.zip
+LSTM.zip
 ```
 
 ## Models
@@ -89,6 +90,19 @@ python evaluate_models.py --input new_data.csv
 * Incorporate more real-time operational data from diverse energy storage systems.
 * Explore hybrid models combining ANN and LSTM for further performance improvements.
 * Deploy models in real-time energy management systems for renewable energy grids.
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@software{VRFB-Power-loss-Prediction-using-Deep-learning,
+  author = {Shubhan Mital},
+  title = {VRFB Power loss Prediction using Deep learning},
+  year = {2025},
+  url = https://github.com/Shubhanflash22/VRFB-Power-loss-Prediction-using-Deep-learning.git
+}
+```
 
 ## License
 
